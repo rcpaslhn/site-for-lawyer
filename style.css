@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   position: relative;
+    overflow-x: hidden;
+}
+
+.head{
+    min-height: 100vh;
+    background-image: url("https://www.melihsaatci.av.tr/file/2021/02/Siran-Avukat.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: black;
+   opacity: .9;
+}
+
+
+
+
+li{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    list-style-type: none;
+    color:white ;
+    cursor: pointer;
+
+}
+li:hover{
+    color: rgb(132, 177, 42);
+    transition: ease-in-out .4s;
+
+}
+
+li a:hover{
+    color: rgb(132, 177, 42);
+    transition: ease-in-out .4s;
+}
+i{
+    color: white;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+.telefon{
+    width: auto;
+    height: auto;
+    border: 5px solid rgb(81, 69, 3);
+    margin-top: 50px;
+}
+.text{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing:3px;
+    padding: 10px;
+ 
+}
+.hr{
+   
+    width: 20%;
+    background-color:rgb(81, 69, 3) ;
+    height: 5px;
+}
+.mavi-arka{
+    background-color: rgb(8, 8, 40);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    
+}
+.mavi-arka:hover{
+    scale: 1.15;
+    transition: ease-in .8s;
+}
+
+.genel-kapsayici{
+    
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 50px;
+}
+h3 a{font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+
+.kart{
+    padding: 10px;
+    width: 350px;
+height: 650px;
+
+background-color: rgb(251, 240, 240);
+margin-bottom: 50px;
+}
+.link{
+    text-align: center;
+    background-color:rgb(81, 69, 3) ;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.footer-arka{
+    background-color:  rgb(13, 13, 45);;
+}
+.cizik{
+    background-color: rgb(50, 50, 50);
+    height: 3px;
+}
+
+.skill{
+    width: 350px;
+    margin: 60px auto;
+    color:rgb(81, 69, 3) ;
+    
+
+
+}
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+/* .bar{
+    background-color: rgb(245, 245, 244) ;
+    display: block;
+    height: 15px;
+    border: 1px solid white;
+   border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ;
+} */
+.bar span{
+    height: 20px;
+    float: left;
+    background:linear-gradient(135deg,rgb(18, 16, 17)0%,rgb(155, 160, 9)100%) ;
+
+}
+
+.ceza{
+    width: 95%;
+    animation:ceza 3s;
+}
+.aile{
+    width: 80%;
+    animation:aile 3s;
+}
+.iflas{
+    width: 90%;
+    animation:iflas 3s;
+}
+
+
+.active{
+    display: block;
+}
+
+main{
+    position: relative;
+}
+.sabit{
+   
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-color:rgb(18, 16, 17) ;
+    justify-content: center;
+    align-items: center;
+ 
+    position:fixed;
+    bottom:0px;
+    right: 0px;
+    opacity: .6;
+}
+
+.yan_div{
+    background-color: white;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+@keyframes ceza{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes aile{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes iflas{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.aciklama{
+    letter-spacing: 1.2;
+    font-weight: 700;
+    
+background-color: rgb(251, 240, 240);
+}
+#nav{
+    position: sticky;
+    top:0px;
+    opacity: 1;
+}
+
+
+@media screen and (max-width:900px) {
+    .genel-kapsayici{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+   
+    .form{
+        flex-direction: column;}
+        .konum{
+            margin-top: 100px;
+        }
+    
+}
+.menü{
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(81, 69, 3)  ;
+    border-radius: 50%;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:830px){
+    .barskil{
+        flex-direction: column;
+    }
+   #paragraf{
+    margin-top: 100px;
+   }
+}
+@media screen and (max-width:980px){
+    header{
+        background-size: co;
+        
+    }
+}
+
+@media screen and (max-width:980px){
+    .nav_item{
+        display: none;
+    }
+    .menü{
+        display:block;
+        cursor: pointer;
+    }
+    #nav{
+        padding: 20px;
+    }
+
+}
+@media screen and (max-width:500px){
+    .information{
+        flex-direction: column;
+        text-align: center;
+    }
+    .son{
+        flex-direction: column;
+        text-align: center;
+    }
+    .sonyazi{
+        margin-top: 20px;
+    }
+}
